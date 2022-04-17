@@ -59,6 +59,6 @@
         </div>
         <x-footer/>
     </div>
-    <script src="{{asset('./js/header.js')}}"></script>
+    
 </body>
 </html>

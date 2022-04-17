@@ -49,7 +49,7 @@ class Controller extends BaseController
 
     public function createTeacher(Request $request){
 
-        if(User::where('email' ,'=', $request->input('email')  == 0)){
+        if(User::where('email' ,'=', $request->input('email'))->count() > 0){
             return back()->withErrors('this teacher is already created');
         }
 
@@ -63,6 +63,7 @@ class Controller extends BaseController
         $teacher = new TeacherModel;
         $teacher->user_id = $user->id;
         $teacher->grade = $request->input('grade');
+        $teacher->save();
 
 
         return Redirect::to(route('dashboard'));

@@ -32,6 +32,7 @@ class CreateNewUser implements CreatesNewUsers
         $studant = new studantModel;
         $studant->user_id = User::all()->count() + 1;
         $studant->niveau = $input['niveau'];
+        $studant->save();
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],

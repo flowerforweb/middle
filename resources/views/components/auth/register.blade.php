@@ -20,7 +20,7 @@
         <input type="email" name="email" id="email" placeholder="Ton Email" required>
         <i class="fas fa-check i"></i>
     </div>
-    <select name="grade" style="background:none;border: none;outline:none">
+    <select name="niveau" style="background:none;border: none;outline:none">
         <option value="" selected disabled>chose a grade</option>
         <option value="2">2eme</option>
         <option value="3">3eme</option>
