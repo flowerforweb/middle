@@ -1,0 +1,414 @@
+.cour-details{
+    width: 100vw;
+    padding: 10px 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3vh;
+}
+.cour-details .detail{
+    width: 250px;
+    background-color: rgb(252, 174, 228);
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #f5f5f5;
+}
+.cour-details .detail .key{
+    font-size: 1.1rem;
+    color: dodgerblue;
+    text-shadow: 1px 1px 1px #fff;
+    margin-right: 3px;
+}
+.cour-details .detail .value{
+    font-size: 1rem;
+    color: gray;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.cour-content{
+    width: 80vw;
+    margin: 5vh auto;
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: 2.5rem auto;
+    border-radius: 15px;
+    padding: .3rem;
+    background-color: #fcd3fd;
+}
+.cour-content .cour-header{
+    width: 100%;
+    height: 100%;
+    padding: 0rem 2rem;
+}
+.cour-content .cour-header h4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(247, 96, 96);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: dodgerblue;
+    text-shadow: 2px 2px 3px #fff;
+}
+.cour-content .cour-body{
+    width: 100%;
+    padding: .5rem 1rem;
+}
+.cour-content .cour-body .cour-section{
+    width: 90%;
+    background-color: #f4f4f5;
+    margin: .2rem auto;
+    border-radius: 1.4rem;
+    border: 1px solid dodgerblue;
+    overflow: hidden;
+    display: grid;
+    height: 2.5rem;
+    grid-template-rows: 2.5rem 300px;
+    transition: .5s;
+}
+.cour-content .cour-body .show{
+    height: calc(2.5rem + 300px);
+}
+.cour-content .cour-body .cour-section .toggler{
+    display: grid;
+    grid-template-columns:4rem auto 4rem;
+    height: 2.5rem;
+}
+.cour-content .cour-body .cour-section .toggler i,.cour-content .cour-body .cour-section .toggler span{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: dodgerblue;
+}
+.cour-content .cour-body .cour-section .toggler i{
+    cursor: pointer;
+}
+.cour-content .cour-body .cour-section .toggler .fa-minus{
+    display: none;
+}
+.cour-content .cour-body .cour-section .toggler .fa-plus:hover{
+    color: green;
+    transform: scale(1.1);
+}
+.cour-content .cour-body .cour-section .toggler .fa-minus:hover{
+    color: red;
+    transform: scale(1.1);
+}
+.cour-content .cour-body .cour-section .content{
+    background-color: pink;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    padding: .5rem;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s;
+}
+.cour-content .cour-body .show .toggler .fa-plus{
+    display: none;
+}
+.cour-content .cour-body .show .toggler .fa-minus{
+    display: block;
+}
+.cour-content .cour-body .cour-section .toggler h4{
+    width: 100%;
+    padding-left: 1rem;
+    height: 80%;
+    margin: auto;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: dodgerblue;
+}
+.cour-section .content>div{
+    width: 250px;
+    min-height: 250px;
+    margin-top: .5rem;
+}
+.cour-section .content .lesson-video{
+    border:1px solid #fcd3fd;
+    width: 300px;
+    display: grid;
+    grid-template-rows: auto 150px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cour-section .content .lesson-video .vid-body{
+    display: grid;
+    grid-template-columns: 200px auto;
+
+    align-items: center;
+}
+.cour-section .content .lesson-video .vid-body .vid-pic{
+    width: 100%;
+    height: 90%;
+
+    padding: .2rem;
+    position: relative;
+}
+.cour-section .content .lesson-video .vid-body .vid-pic img{
+    width: 98%;
+    height: 95%;
+    border-radius: 10px;
+    position: absolute;
+    filter: blur(1px);
+}
+.cour-section .content .lesson-video .vid-body .vid-pic i{
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    color: whitesmoke;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    backdrop-filter: lighten;
+}
+.cour-section .content .lesson-video .vid-body .vid-pic i:hover{
+    background-color: #f5f5f5;
+    color: dodgerblue;
+    transform: scale(1.1);
+}
+.cour-section .content .lesson-video .vid-body .vid-details{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: .2rem 0.1rem;
+}
+.cour-section .content .lesson-video .vid-body .vid-details .vid-detail{
+    font-size: .7rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: dodgerblue;
+    text-shadow: 1px 1px #f5f5f5;
+}
+.cour-section .content .lesson-video .vid-header{
+    color: deeppink;
+    text-shadow: 2px 2px 1px #f5f5f5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #f5f5f5;
+}
+.cour-section .content .lesson-video .down{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.cour-section .content .lesson-video .down a{
+    display: flex;
+    background-color: #f5f5f5;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: dodgerblue;
+    transition: .3s;
+}
+.cour-section .content .lesson-video .down a:nth-child(1){
+    border-right: 1px solid dodgerblue;
+}
+.cour-section .content .lesson-video .down a:hover{
+    background-color: #f375f3;
+}
+.test{
+    width: 100vw;
+    margin: 8vh 0vh;
+    overflow: hidden;
+}
+.test .go{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 20%;
+    font-size: 1rem;
+    margin: auto;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    background-color: #f5f5f5;
+}
+.test h4{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 2.5rem;
+    color: dodgerblue;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.test a {
+    width: 100%;
+    height: 100%;
+    color: pink;
+    text-shadow: 1px 1px rgb(56, 53, 53);
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    transition: .5s;
+}
+.test a:hover{
+    background-color: pink;
+    color: #f5f5f5;
+}
+
+
+
+/* comment section */
+
+
+.comments{
+    width: 100vw;
+    padding: .5rem 0rem;
+}
+.comments .inner{
+    background-color: rgb(252, 149, 166);
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 3rem auto 3rem;
+    border: 1px solid dodgerblue;
+}
+.comments .inner .comments-header{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.comments .inner .comments-header h3{
+    width: 200px;
+    height: 100%;
+    background-color: pink;
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.comments .inner .comments-footer{
+    width: 100%;
+    height: 100%;
+    padding-top: .2rem;
+}
+.comments .inner .comments-footer .footer-inner{
+    background-color: pink;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.comments .inner .comments-footer .footer-inner form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.comments .inner .comments-footer .footer-inner form .add{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    height: 100%;
+}
+.comments .inner .comments-footer .footer-inner form .add i{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.comments .inner .comments-footer .footer-inner form .add input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.comments .inner .comments-footer .footer-inner form .btn{
+    width: 100%;
+    height: 100%;
+}
+.comments .inner .comments-footer .footer-inner form .btn button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.comments .inner .comments-footer .footer-inner form .btn button i:hover{
+    color: dodgerblue;
+}
+
+.comments .inner .comments-body{
+    padding: .5rem 0rem;
+    width: 80%;
+    margin: auto;
+}
+
+.comments .inner .comment{
+    background-color: #f375f3;
+    width: 100%;
+    margin: .2rem 0rem;
+    border-radius: 10px;
+}
+.comments .inner .comment .comment-view{
+    padding: .1rem;
+    display: grid;
+    grid-template-rows: 2.5rem auto;
+}
+.comments .inner .comment .comment-view .publisher{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .1rem;
+}
+.comments .inner .comment .comment-view .publisher span{
+    margin: 0rem .2rem;
+    display: block;
+    color: #f5f5f5;
+}
+.comments .inner .comment .comment-view .publisher i{
+    color: gray;
+}
+.comments .inner .comment .comment-view .publisher .pub-pic{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+}
+.comments .inner .comment .comment-view .publisher .pub-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+}
+.comments .inner .comment .comment-view .comment-content{
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}

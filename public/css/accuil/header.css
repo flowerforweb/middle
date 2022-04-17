@@ -1,0 +1,177 @@
+.header{
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+}
+.header .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header .inner .brand{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .inner .brand i{
+    font-size: 1.4rem;
+    color: dodgerblue;
+}
+.header .inner .brand i em{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(176, 20, 238);
+}
+.header .inner .nav{
+    width:75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header .inner .nav .main-nav{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header .inner .nav .main-nav li{
+    margin: 0px 1rem;
+    height: 100%;
+    line-height: 10vh;
+    overflow: visible;
+    width: 110px;
+}
+.header .inner .nav .main-nav li.drop-li .list{
+    width: auto;
+    min-width: 150px;
+    position: relative;
+    left: -1rem;
+    top: .05rem;
+}
+.header .inner .nav .main-nav li.drop-li .list ul{
+    width: auto;
+    min-width: 150px;
+    padding: .3rem;
+    background-color: #f5f5f5;
+}
+.header .inner .nav .main-nav li.drop-li .list ul li{
+    background-color: #f5f5f5;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: .1rem 1rem;
+    margin: 1rem .2rem;
+    width: auto;
+    transition: .5s;
+}
+.header .inner .nav .main-nav li>a , .header .inner .nav .main-nav li.drop-li .toggle{
+    color: dodgerblue;
+    display: inline-block;
+    cursor: pointer;
+}
+.header .inner .nav .main-nav li>a:hover  ,.header .inner .nav .main-nav li.drop-li .toggle:hover{
+     transform: scale(1.1);
+ }
+.header .inner .nav .main-nav li.drop-li .list ul li a:hover{
+    border: 1px solid dodgerblue;
+}
+.header .inner .nav .main-nav li.drop-li:hover .list{
+    display: block;
+}
+.header .inner .nav .main-nav li.drop-li:hover .fa-caret-down{
+    transition: .5s;
+}
+.header .inner .nav .main-nav li.drop-li:hover .fa-caret-down{
+    transform: rotateX(180deg);
+}
+.header .inner .nav .main-nav li.drop-li .list ul li a{
+    padding: .2rem .3rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    color: dodgerblue;
+
+}
+
+/*Secondary nav*/
+.header .inner .nav .sec-nav{
+    height: 10vh;
+}
+.header .inner .nav .sec-nav .auth{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10vh auto;
+    align-items: center;
+}
+.header .inner .nav .sec-nav .auth button{
+    width: auto;
+    border: 1px solid dodgerblue;
+    outline: none;
+    height: 2.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: dodgerblue;
+}
+.header .inner .nav .sec-nav .auth .auth-menu{
+    width: auto;
+    min-width: 150px;
+    background-color: whitesmoke;
+    display: none;
+}
+.header .inner .nav .sec-nav .auth .auth-menu ul{
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+}
+.header .inner .nav .sec-nav .auth .auth-menu ul li{
+    width: auto;
+    height: auto;
+    padding: .5rem 1rem;
+    transition: .5s;
+}
+.header .inner .nav .sec-nav .auth .auth-menu ul li:hover{
+    background-color: rgb(172, 169, 169);
+    text-shadow: 1px 1px white;
+}
+.header .list{
+    display: none;
+    position: relative;
+}
+.header .inner .nav .sec-nav .auth .auth-menu ul li a{
+    color: dodgerblue;
+    letter-spacing: 2px;
+    font-size: .9rem;
+}
+.header .inner .nav .sec-nav .auth-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .inner .nav .sec-nav .auth-info .user-img {
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+}
+.header .inner .nav .sec-nav .auth-info .user-img img{
+    width: 100%;
+    height: 100%;
+}
+.header .inner .nav .sec-nav .auth-info span{
+    margin: 0px .5rem;
+}
+.header .inner .nav .sec-nav .auth-info i{
+    cursor: pointer;
+}

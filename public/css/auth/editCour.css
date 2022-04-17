@@ -1,0 +1,97 @@
+.mycont{
+    width: 100vw;
+    min-height: 50vh;
+    height: auto;
+}
+.mycont .workspace{
+    width: 70%;
+    margin: auto;
+    background-color: #f4f4f4;
+    margin-top: 3vh;
+    padding: 1rem 0rem;
+}
+.mycont .workspace .work-header{
+    width: 90%;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: pink;
+    text-align: left;
+    padding-left: .5rem;
+    line-height: 3rem;
+    margin: auto;
+    margin-top: .5rem;
+}
+.mycont .workspace .work-header h4{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 1px 1px dodgerblue;
+    padding-left: .5rem;
+}
+.mycont .workspace .work-header h4 span{
+    color: dodgerblue;
+    text-shadow: 1px 1px #f4f4f4;
+}
+.mycont .workspace .lessons{
+    width: 90%;
+    min-height: 3rem;
+    height: auto;
+    background-color: pink;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 3rem auto 3rem;
+}
+.mycont .workspace .lessons .title{
+    color: dodgerblue;
+    text-shadow: 1px 1px #f4f4f4;
+    letter-spacing: 1px;
+    padding-left: .5rem;
+}
+.mycont .workspace .lessons .ask{
+    width: 100%;
+    height: 100%;
+    line-height: 3rem;
+    text-align: center;
+}
+.mycont .workspace .lessons .ask button{
+    background-color: #f5f5f5;
+    padding: .5rem .7rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: dodgerblue;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+.mycont .workspace .lessons .ask button:hover{
+    background-color: rgb(245, 97, 121);
+    color: wheat;
+}
+
+.mycont .workspace .lessons .content{
+    text-align: center;
+    padding: .5rem 0rem;
+}
+.mycont .workspace .qcm{
+    width: 90%;
+    height: 3rem;
+    background-color: pink;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+
+}
+.mycont .workspace .qcm .title{
+    width: 30%;
+    height: 100%;
+    line-height: 3rem;
+    text-align: center;
+}
+.mycont .workspace .qcm .content{
+    padding: .2rem 1rem;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 3rem;
+}

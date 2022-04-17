@@ -1,0 +1,147 @@
+.test-body{
+    width: 100%;
+    padding: 1rem 0rem;
+}
+.test-body .test-questions{
+    width: 450px;
+    margin: auto;
+}
+.test-body .test-questions .ask{
+    background-color: #f5f5f5;
+    width: 450px;
+    padding: .5rem;
+    margin: .5rem 0rem;
+}
+.test-body .test-questions .ask .question{
+    width: 100%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 3rem auto;
+    border: 1px solid dodgerblue;
+}
+.test-body .test-questions .ask .question i{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    border-right: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+.test-body .test-questions .ask .question input{
+    width: 100%;
+    background:none;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding-left: .5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: dodgerblue;
+}
+.test-body .test-questions .ask .choices{
+    width: 100%;
+    padding: .5rem .5rem .5rem 2rem;
+}
+.test-body .test-questions .ask .choices .inner{
+    width: 100%;
+    height: 100%;
+}
+.test-body .test-questions .ask .choices .inner .choice{
+    width: 100%;
+    min-height: 2.5rem;
+    display: grid;
+    grid-template-columns: 2.5rem auto 5rem;
+    border: 1px solid dodgerblue;
+    background-color: #f5f5f5;
+    margin: .5rem 0rem;
+}
+.test-body .test-questions .ask .choices .inner .choice span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem 0rem;
+    border-right: 1px solid dodgerblue;
+}
+.test-body .test-questions .ask .choices .inner .choice span.span-btn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0px;
+    border: none;
+}
+.test-body .test-questions .ask .choices .inner .choice span.span-btn i{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background : #f5f5f5;
+    filter: grayscale(50%);
+    cursor: pointer;
+}
+.test-body .test-questions .ask .choices .inner .choice span.span-btn i:hover{
+    filter: none;
+}
+.test-body .test-questions .ask .choices .inner .choice span.span-btn .vrai{
+    background-color: green;
+}
+.test-body .test-questions .ask .choices .inner .choice span.span-btn .faux{
+    background-color: red;
+}
+.test-body .test-questions .ask .choices .inner .choice span.span-btn i.active{
+    transform: scale(1.1);
+    filter: none;
+}
+.test-body .test-questions .ask .addChoice{
+    width: 100%;
+    text-align: right;
+    margin-top: 1rem;
+}
+.test-body .test-questions .ask .addChoice i{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 2.5rem;
+    color: dodgerblue;
+    cursor: pointer;
+}
+.test-body .addAsk{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.test-body .addAsk button{
+    width: 7rem;
+    height: 2.5rem;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+}
+.btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.btn button{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: dodgerblue;
+    color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+.test-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    color: dodgerblue;
+    text-shadow: 1px 1px 1px #f5f5f5;
+}

@@ -1,0 +1,144 @@
+.auth-container{
+    width: calc(30vw + .2rem);
+    margin: auto;
+    position: relative;
+    padding: .2rem;
+    border-radius: 10px;
+    border: 1px solid rgb(48, 171, 241);
+}
+.reg-con{
+    height: calc(80vh + .2rem);
+    top: 5vh;
+}
+.log-con{
+    height: calc(60vh + .2rem);
+    top: 10vh;
+}
+.auth-container .inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    border: 1px solid rgb(48, 171, 241);
+    display: grid;
+    grid-template-rows: 10% 90%;
+    overflow: hidden;
+}
+.auth-container .auth-header{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-container .auth-header *{
+    font-size: 1.5rem;
+    color: rgb(48, 171, 241);
+    text-shadow: 1px 1px 2px #fff , -1px -1px 2px #fff;
+}
+.auth-container .auth-header i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .5rem;
+}
+.auth-container .inner form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+.auth-container .inner .reg-form{
+    grid-template-rows: repeat(7,1fr);
+}
+.auth-container .inner .log-form{
+    grid-template-rows: repeat(5,1fr);
+}
+.auth-container .inner form .errors{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.auth-container .inner form .errors ul{
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+}
+.auth-container .inner form .errors ul li{
+    font-size: .8rem;
+    color: red;
+    text-transform: uppercase;
+}
+.auth-container .inner form  .inpt{
+    width: 90%;
+    height: 2.8rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 15% auto 8%;
+    border-radius: 2.5rem;
+    background-color: dodgerblue;
+}
+.auth-container .inner form  .inpt i,.auth-container .inner form  .inpt span{
+    width: 100%;
+    height: 100%;
+    line-height: 2.8rem;
+    text-align: center;
+}
+.auth-container .inner form  .inpt i{
+    color: whitesmoke;
+}
+.auth-container .inner form  .inpt span{
+    color: red;
+}
+.auth-container .inner form  .inpt .i{
+    color: green;
+}
+.auth-container .inner form  .inpt input{
+    width: 100%;
+    height: 100%;
+    padding: 0rem .4rem;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.auth-container .inner form  .inpt input::placeholder{
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .5;
+    font-size: .8rem;
+}
+.auth-container .inner form .already{
+    margin: auto;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+.auth-container .inner form .already a{
+    color: dodgerblue;
+}
+.auth-container .inner form .sub{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.auth-container .inner form .sub button{
+    width: 40%;
+    height: 2.5rem;
+    border: 1px solid dodgerblue;
+    border-radius: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: auto;
+    color: dodgerblue;
+    cursor: pointer;
+}
+.auth-container .inner form .sub button:hover{
+    background-color: dodgerblue;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
