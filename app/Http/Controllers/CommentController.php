@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\Commenter;
 use App\Models\Comment;
 use App\Http\Requests\StoreCommentRequest;
 use App\Http\Requests\UpdateCommentRequest;
 use App\View\Components\Comment as CommentComponent;
+use Illuminate\Console\Scheduling\Event;
 use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
@@ -47,6 +49,8 @@ class CommentController extends Controller
         $comment -> user_id = $user_id;
         $comment ->cour_id = $cour;
         $comment->save();
+
+        Event(new Commenter($comment->content));
 
         return $comment;
     }

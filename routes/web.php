@@ -14,9 +14,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\VideoController;
 use App\Models\Cour;
-use App\Models\Exo;
-use App\Models\Pdffile;
-use App\Models\Video;
+use App\Models\Test;
 
 /*
 |--------------------------------------------------------------------------
@@ -103,9 +101,14 @@ Route::middleware('admin')->group(function(){
 });
 
 
+Route::get('/test/{test_id}/do' , function($test_id){
+    $test = Test::find($test_id);
+    return view('authenticated.studant.test' , compact('test'));
+})->name("doTest")->middleware('studant');
 
-
-
+Route::get('/messenger',function(){
+    return view('authenticated.messenger');
+});
 
 /*
 $file = $request->file('image');

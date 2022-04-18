@@ -7,6 +7,7 @@
     <x-require-links/>
     <link rel="stylesheet" href="{{asset('./css/accuil/header.css')}}">
     <link rel="stylesheet" href="{{asset('./css/accuil/coursView.css')}}">
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
     <title>Courses</title>
 </head>
 <body>
@@ -59,6 +60,21 @@
         </div>
         <x-footer/>
     </div>
-    
+
+    <script>
+        /*
+        Pusher.logToConsole = true;
+
+var pusher = new Pusher('24039558f463803ef3c1', {
+  cluster: 'eu',
+  encrypted : true
+});
+
+var channel = pusher.subscribe('channeli');
+channel.bind('App\\Events\\Commenter', function(data) {
+  alert(JSON.stringify(data));
+});
+         */
+    </script>
 </body>
 </html>

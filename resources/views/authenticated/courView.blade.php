@@ -70,7 +70,7 @@
                 <h4>
                     {{$c->test->title ?? 'no test'}}
                 </h4>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="{{route('doTest',['test_id'=>$c->test->id])}}" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-golang"></i>
                 </a>
             </div>

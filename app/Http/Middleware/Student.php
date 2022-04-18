@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class Student
 {
@@ -16,6 +18,14 @@ class Student
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if(Auth::check()){
+            if(Auth::user()->type == 'studant'){
+                return $next($request);
+            }else{
+                return Redirect::to(route('notAllowed'));
+            }
+        }else{
+            return Redirect::to(route('login'));
+        }
     }
 }
