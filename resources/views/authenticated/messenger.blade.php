@@ -17,37 +17,123 @@
             <div class="messenger-inner">
                 <div class="people">
                     <div class="people-inner">
-                        <div class="friend">
-                            <span>
-                                <img src="/" alt="/">
-                            </span>
-                            <span>
-                                name of user
-                            </span>
+                        <div class="people-header">
+                            <form action="#">
+                                <input type="text" placeholder="search friend">
+                                <i class="fas fa-search"></i>
+                            </form>
                         </div>
-                        <div class="friend">
-                            <span>
-                                <img src="/" alt="/">
-                            </span>
-                            <span>
-                                name of user
-                            </span>
-                        </div>
-                        <div class="friend">
-                            <span>
-                                <img src="/" alt="/">
-                            </span>
-                            <span>
-                                name of user
-                            </span>
-                        </div>
-                        <div class="friend">
-                            <span>
-                                <img src="/" alt="/">
-                            </span>
-                            <span>
-                                name of user
-                            </span>
+                        <div class="friends">
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="friend">
+                                    <span>
+                                        <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
+                                    </span>
+                                    <span>
+                                        name of user
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -56,32 +142,88 @@
                         <div class="show-header">
                             <div class="user-id">
                                 <span>
-                                    <img src="/" alt="/">
+                                    <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" alt="/">
                                 </span>
                                 <span>
                                     user name
                                 </span>
-                                <span>
-                                    ...
-                                </span>
+                            </div>
+                            <div class="toggler">
+                                <i class="fa-solid fa-ellipsis"></i>
                             </div>
                         </div>
                         <div class="show-messages">
-                            <div class="show-inner">
-                                here messas
+                            <div class="messages">
+                                <div class="message message-sent">
+                                    <p>
+                                        hello
+                                    </p>
+                                </div>
+                                <div class="message message-reciver">
+                                    <p>
+                                        hi
+                                    </p>
+                                </div>
+                                <div class="message message-reciver">
+                                    <p>
+                                        hi how are you
+                                    </p>
+                                </div>
+                                <div class="message message-sent">
+                                    <p>
+                                        i am good thank you for question i was waiting you all the day i am good thank you for question i was waiting you all the day
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="form">
                             <form id="messageForm">
-                                <i class="fas fa-chat"></i>
-                                <input type="text">
-                                <i class="fas fa-papper-plane"></i>
+                                <input type="text" id="message" placeholder="your message ...">
+                                <i class="fas fa-paper-plane"></i>
                             </form>
+                        </div>
+
+                        <div class="chat">
+                            <div class="icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="chat-text">
+                                Chat Room
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script>
+        function seeChat(id){
+            $.ajax({
+                type : "get",
+                url : "",
+                success : function(data){
+                    $(function(){
+                        var cont = $('.messages');
+                        $(cont).html('.');
+                        var html;
+                        for(let message of data){
+                            html = `
+                            <div class="message ${message.sender == id ? "message-reciver" :"message-sent"}">
+                                <p>
+                                    ${message.message}
+                                </p>
+                            </div>
+                            `
+                            $(cont).append()
+                        }
+
+                    })
+                }
+            })
+        }
+    </script>
 </body>
+
 </html>
