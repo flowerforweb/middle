@@ -1,0 +1,33 @@
+.messenger-outer{
+    background-color: red;
+    margin-top: 1rem;
+    width: 100%;
+    padding: .5rem 0rem;
+}
+.messenger-outer .messenger-inner{
+    width: 80vw;
+    background-color: green;
+    display: grid;
+    grid-template-columns: 25vw 55vw;
+    margin: auto;
+}
+.messenger-outer .messenger-inner .people{
+    width: 100%;
+    padding: .5rem .2rem;
+}
+.messenger-outer .messenger-inner .people .people-inner{
+    width: 100%;
+}
+.messenger-outer .messenger-inner .people .people-inner .friend{
+    width: 100%;
+    height:3.5rem;
+    background-color: yellow;
+    margin: .2rem 0rem;
+}
+.messenger-outer .messenger-inner .show{
+    width: 100%;
+    padding: .5rem .2rem;
+}
+.messenger-outer .messenger-inner .show .show-inner{
+    background-color: yellow;
+}
