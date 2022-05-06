@@ -52,6 +52,9 @@
         <div class="container">
 
         </div>
+        <video width="100" height="100">
+            <source src="https://vimeo.com/703064200" type="video/mp4">
+        </video>
         <x-footer/>
     </div>
     <script src="{{asset('./js/header.js')}}"></script>

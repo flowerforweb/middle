@@ -15,6 +15,7 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\VideoController;
 use App\Models\Cour;
 use App\Models\Test;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -82,12 +83,13 @@ Route::middleware('auth')->group(function(){
         return view('authenticated.courView' , compact('c'));
     })->name('viewCour');
 });
+Route::post('/createCour',[CourController::class , 'store'])->name('createCour');
 
 Route::middleware('teacher')->group(function(){
     Route::post('addQuestion',[QuestionController::class , 'store'])->name('addAsk');
     Route::post('addTest',[TestController::class , 'store'])->name('addTest');
     Route::post('addChoice',[ChoiceController::class , 'store'])->name('addChoice');
-    Route::post('/createCour',[CourController::class , 'store'])->name('createCour')->middleware('teacher');
+    
     Route::post('/createLesson',[LessonController::class , 'store'])->name('createLesson');
     Route::post('/addVideo',[VideoController::class , 'store'])->name('addVideo');
     Route::post('/addPdf',[PdffileController::class , 'store'])->name('addPdf');
@@ -106,8 +108,10 @@ Route::get('/test/{test_id}/do' , function($test_id){
     return view('authenticated.studant.test' , compact('test'));
 })->name("doTest")->middleware('studant');
 
-Route::get('/messenger',function(){
-    return view('authenticated.messenger');
+Route::get('/messenger/{user_id}',function($user_id){
+    $chatter = User::find($user_id);
+
+    return view('authenticated.messenger' , compact('chatter'));
 });
 
 /*

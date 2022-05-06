@@ -53,7 +53,7 @@ class CourPolicy
      */
     public function update(User $user, Cour $cour)
     {
-        //
+        return $user->id === $cour->user_id;
     }
 
     /**
